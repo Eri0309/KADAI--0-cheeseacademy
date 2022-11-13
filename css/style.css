@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* cssは指示ごとにコロンで締める必要がある。カラーコードで調べる */
+h2 {
+    color: #8fbc8f;
+    /* fz12 + tab */
+    font-size: 42px;
+}
+
+.b {
+    /* fwb + tab で太くなる。文字の太さ変えられる */
+font-weight: bold;
+
+}
+
+.b {
+    color: red;
+}

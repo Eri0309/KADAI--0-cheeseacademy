@@ -1,0 +1,468 @@
+/* ここから下に記載していく */
+
+@charset "utf-8";
+
+.html{
+   font-size: 62.5%;
+}
+
+/* 全体の指定 */
+.wrap {
+   width: 1200px;
+   margin-right: auto;
+   margin-left: auto;
+   font-size: 16px;
+   line-height: normal;
+   color: #222222;
+}
+
+/* ヘッダーの指定 */
+.header {
+   display: flex;
+}
+
+.topimage {
+   margin: auto;
+   /* 見本より真ん中に寄りすぎか？ */
+}
+
+.menu{
+   display: flex;
+   list-style: none;
+   text-align: right;
+   padding: 50px 0;
+}
+
+a{
+   color: #222222;
+   text-decoration: none;
+   font-size: 21px;
+   margin: auto 25px;
+/* 見本より右に寄りすぎ。。。 */
+}
+
+.box{
+   font-size: 21px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-right: auto;
+/* 文字の間が50pxではないかも。要修正 */
+}
+
+/* タイトルの指定 */
+.mainvisual {
+   position: relative;
+}
+
+.mainvisual img {
+   max-width: 100%;
+}
+
+.topword {
+color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.main1 {
+   padding-bottom: 30px;
+   font-size: 50px;
+   font-weight: bold;
+   white-space: nowrap;
+}
+
+.main2{
+   font-size: 35px;
+   white-space: nowrap;
+}
+
+/* アバウトの指定 */
+
+
+.contents {
+text-align: center;
+}
+
+.about {
+   font-size: 24px;
+   color: #ffd61a;
+   font-weight: bold;
+   padding: 30px;
+   margin-top: 30px;
+}
+
+.about_01 {
+   font-size: 18px;
+   color: #222222;
+   padding-bottom: 60px;
+}
+
+.honbun {
+   font-size: 16px;
+   color: #222222;
+   border: #cacaca;
+   line-height: normal;
+}
+
+.honbun1 {
+   padding-bottom: 40px;
+}
+
+.honbun4 {
+   padding-bottom: 40px;
+   padding-top: 40px;
+}
+
+.honbun6 {
+   padding-bottom: 80px;
+}
+
+/* 以下スライドショー。よくわからない・・・ */
+
+.slide {
+   position: relative;
+   overflow: hidden;
+   width: 380px;
+   height: 300px;
+   margin: auto;
+}
+
+.img04, .img03, .img02,.img01{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.img04{
+   animation: slide-animation-04 15s infinite;
+}
+.img03{
+   animation: slide-animation-03 15s infinite;
+}
+.img02{
+   animation: slide-animation-02 15s infinite;
+}
+.img01{
+   animation: slide-animation-01 15s infinite;
+}
+
+/* keyframesの使い方というか割合の分け方難しい。。再度復習。 */
+
+@keyframes slide-animation-04 {
+   0% {opacity: 0;}
+   10% {opacity: 1;}
+   20% {opacity: 1;}
+   35% {opacity: 0}
+   100% {opacity: 0}
+ }
+
+ @keyframes slide-animation-03 {
+   0% {opacity: 0;}
+   15% {opacity: 0;}
+   25% {opacity: 1;}
+   35% {opacity: 1;}
+   45% {opacity: 0;}
+   100% {opacity: 0;}
+ }
+
+ @keyframes slide-animation-02 {
+   0% {opacity: 0;}
+   35% {opacity: 0;}
+   45% {opacity: 1;}
+   55% {opacity: 1;}
+   65% {opacity: 0;}
+   100% {opacity: 0;}
+ }
+
+ @keyframes slide-animation-01 {
+   0% {opacity: 0;}
+   45% {opacity: 0;}
+   55% {opacity: 0;}
+   85% {opacity: 1;}
+   100% {opacity: 0;}
+ }
+
+
+
+/* コースの指定 */
+
+.course {
+   font-size: 24px;
+   color: #222222;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+
+.coursehonbun {
+   font-size: 16px;
+   color: #222222;
+   text-align: center;
+   margin-bottom: 60px;
+   line-height: normal;
+}
+
+.container {
+   width: 100%;
+   display: flex;
+}
+
+.courseimg{
+   width: 50%;
+}
+
+.courseimg img{
+   max-width: 100%;
+   height: 100%;
+}
+
+.textbox{
+   width: 50%;
+   background-color: #fafafa;
+}
+
+.coursetext{
+   width: 480px;
+   margin: 120px 0;
+   padding-left: 50px;
+}
+
+.coursetext h3 {
+   font-size: 18px;
+   font-weight: bold;
+   padding-bottom: 40px;
+}
+
+.coursetext1{
+   margin: 120px 50px 120px 120px;
+}
+
+.coursetext1 h3 {
+   font-size: 18px;
+   font-weight: bold;
+   padding-bottom: 40px;
+}
+
+/* news */
+
+.news{
+   max-width: 100%;
+   text-align: center;
+}
+
+.newstitle{
+   font-size: 24px;
+   font-weight: bold;
+   color: #ffd61a;
+   padding: 60px 0 30px 0; 
+}
+
+.newstitle p{
+   font-size: 18px;
+}
+
+.newstitle_01{
+   font-size: 16px;
+   color: #222222;
+}
+
+.newsimage {
+   display: flex;
+   padding: 60px 0 60px 0;
+   justify-content: center;
+}
+
+.newssection{
+   width: 300px;
+   margin: 15px;
+}
+
+.newssection:hover{
+   background-color: transparent;
+   border: 2px solid; color: red;
+
+}
+
+.newsdate {
+   padding: 30px 0 24px 0;
+   text-align: left;
+   font-size: 14px;
+}
+
+.newstext{
+   line-height: normal;
+   font-size: 14px;
+   text-align: left;
+}
+
+.send{
+   background-color: #ffd61a;
+   color: white;
+   width: 300px;
+   height: 60px;
+   border: none;
+   font-size: 18px;
+}
+
+.button {
+   justify-content: center;
+}
+
+.send:hover{
+   background-color: grey;
+   cursor: pointer;
+   cursor: hand;
+}
+
+
+/* ACCESS */
+
+.access{
+   background-color: #fafafa;
+   padding-top: 60px;
+   margin-top: 60px;
+}
+
+.access h2{
+   font-size: 24px;
+   color: #222222;
+   font-weight: bold;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.access p{
+   font-size: 18px;
+   color: #222222;
+   text-align: center;
+}
+
+.access iframe{
+   width: 100%;
+   height: 200px;
+   margin: 60px 0 0 0;
+}
+
+.accessinfo{
+   justify-content: center;
+   padding: 45px 0 45px 0;
+}
+
+.infobody{
+   margin: auto;
+   height: 50px;
+}
+
+/* 上のコード。なぜtacやjccではセンターに寄らないのか？ */
+
+.infohead{
+   text-align: left;
+   width: 150px;
+   padding: 15px;
+}
+
+.infodata{
+   text-align: left;
+   padding: 15px;
+}
+
+.contact{
+   max-width: 100%;
+}
+
+.contact h2{
+   font-size: 24px;
+   font-weight: bold;
+   color: #222222;
+   padding: 60px 0 30px 0;
+   text-align: center;
+}
+
+.contacttext {
+   font-size: 18px;
+   color: #222222;
+   padding-bottom: 60px;
+   text-align: center;
+}
+
+.contacttext1{
+   font-size: 16px;
+   line-height: normal;
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+/* お問い合わせフォーム */
+
+.form{
+   padding-top: 40px;
+   text-align: center;
+}
+
+.formbody {
+   display: inline-block;
+   padding: auto;
+   font-size: 13px;
+   padding-bottom: 30px;
+}
+
+.tablehead,
+.tabledata {
+   border: 1px solid #bfbfbf;
+}
+
+.tablehead {
+   width: 240px;
+   padding: 8px 64px 8px 14px;
+   border-left: hidden;
+   text-align: left;
+
+}
+
+.tabledata{
+   width: 400px;
+   text-align: left;
+   border-right: hidden;
+}
+   
+.formdata{
+   width: 328px;
+   height: 36px;
+   margin: 8px 0 8px 8px;
+   border: solid 1px #bfbfbf;
+}
+
+.tableselect{
+   width: 328px;
+   height: 37px;
+   margin: 8px 0 8px 8px;
+   border: 1px solid #bfbfbf;
+}
+
+.tabledata li{
+   margin: 0 0 24px 8px;
+}
+
+.textarea {
+   width: 328px;
+   margin: 8px 0 8px 8px;
+   border: 1px solid #bfbfbf;
+}
+
+/* フッター */
+
+.footer{
+   width: 100%;
+   background-color: #707070;
+   color: white;
+   text-align: center;
+   padding: 30px 0 30px 0;
+   margin-top: 140px;
+}
